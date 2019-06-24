@@ -24,13 +24,6 @@ const Field = ({
             key={index}
             {...{ isSelected, isLimit }}
             onClick={() => {
-              console.log({
-                isLimit,
-                isSelected,
-                selectedfields,
-                index,
-                fieldSelectedMaxAmount
-              });
               if (isLimit && !isSelected) {
                 return;
               } else if (!isSelected) {
