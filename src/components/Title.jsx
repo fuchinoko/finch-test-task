@@ -7,8 +7,8 @@ const Title = ({ randomField, resetGame, isEmpty, isResultShowed }) => (
     <span> Билет 1 </span>
 
     <Button isVisible={!isEmpty || isResultShowed} onClick={resetGame}>
-      {' '}
-      Очистить{' '}
+      
+      Очистить
     </Button>
 
     <MagicWand onClick={randomField}>

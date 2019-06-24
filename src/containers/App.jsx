@@ -48,12 +48,10 @@ const App = () => {
       SECOND_FIELD_SELECTED_AMOUNT
     );
 
-    if (
-      isOverlapping(
+    if (isOverlapping(
         finalFirstFieldSelected,
         firstFieldSelected,
-        FIRST_WINNING_SITUATION_FIRST_FIELD_SELECTED
-      ) ||
+        FIRST_WINNING_SITUATION_FIRST_FIELD_SELECTED) ||
       (isOverlapping(
         finalFirstFieldSelected,
         firstFieldSelected,
@@ -106,8 +104,7 @@ const App = () => {
                 {...{ isCompleted }}
                 onClick={isCompleted ? showResult : null}
               >
-                {' '}
-                Показать результат{' '}
+                Показать результат
               </ShowResult>
             </>
           )}
