@@ -8,3 +8,5 @@ export const randomSeveralNumbers = (amount, selected) =>  {
 
 export const isOverlapping  = (firstArr, secondArr, overlapNumber) =>  
   firstArr.filter(value => -1 !== secondArr.indexOf(value)).length >= overlapNumber;
+
+export const range = (N) => Array.from({length: N}, (v, k) => k+1) ;
